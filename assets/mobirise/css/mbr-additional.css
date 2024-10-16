@@ -1396,10 +1396,13 @@ a {
 .cid-uroP4LKtYd {
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: #efefef;
+  background-color: #f7f7f7;
 }
 .cid-uroP4LKtYd img {
   width: auto;
+}
+.cid-uroP4LKtYd H2 {
+  color: #ffffff;
 }
 .cid-uroFO4TuIS {
   padding-top: 6rem;

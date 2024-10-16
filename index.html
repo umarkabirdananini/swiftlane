@@ -12,7 +12,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/1.png" type="image/x-icon">
   <meta name="description" content="Ride with Elegance, Arrive in Style!">
-  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" crossorigin="anonymous"></script>
+    
+    
   
   <title>Swift-Lane Cab Services Limited!</title>
   <link rel="stylesheet" href="assets/font-awesome-solid/../css/fontawesome.min.css">
@@ -26,7 +29,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=NjIi2K"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=NjIi2K" type="text/css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=KdCHrc"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=KdCHrc" type="text/css">
 
   
   
@@ -71,7 +74,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="content-wrap col-12 col-md-8">
-				<h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-2"><strong>Welcome to Swift-Lane Cab Services Limited!</strong></h1>
+				<h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-5"><strong>Welcome to Swift-Lane Cab Services Limited!</strong></h1>
 				
 				<p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7">
 					Ride with Elegance, Arrive in Style!</p>
@@ -88,18 +91,6 @@
 
 
 <!-- Place your own code below -->
-
-
-
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking Form</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" crossorigin="anonymous"></script>
-    
-    
 
 
 
@@ -218,7 +209,6 @@
             <input type="hidden" name="fvv" value="1">
             <input type="hidden" name="fbzx" value="4116437728205252127">
             <input type="hidden" name="pageHistory" value="0">
-
             <button class="btn btn-primary btn-block" id="submitBtn" type="submit">Book</button>
             <div class="progress mt-3" style="height: 25px; display: none;" id="progressBar">
                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 100%"></div>
@@ -226,42 +216,7 @@
         </form>
     </div>
 
-   <script>
-$('#bootstrapForm').submit(function (event) {
-    event.preventDefault()
-    var extraData = {}
-    {
-        /* Parsing input date id=689828984 */
-        var dateField = $("#689828984_date").val()
-        var timeField = $("#689828984_time").val()
-        let d = new Date(dateField)
-        if (!isNaN(d.getTime())) {
-            extraData["entry.689828984_year"] = d.getFullYear()
-            extraData["entry.689828984_month"] = d.getMonth() + 1
-            extraData["entry.689828984_day"] = d.getUTCDate()
-        }
-        if (timeField && timeField.split(':').length >= 2) {
-            let values = timeField.split(':')
-            extraData["entry.689828984_hour"] = values[0]
-            extraData["entry.689828984_minute"] = values[1]
-        }
-    }
-    $('#bootstrapForm').ajaxSubmit({
-        data: extraData,
-        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
-        error: function () {
-            // Submit of form should be successful but JSONP callback will fail because Google Forms
-            // does not support it, so this is handled as a failure.
-            alert('Booked Successfully!.')
-            // You can also redirect the user to a custom thank-you page:
-            window.location = 'https://wa.me/2348088883958'
-        }
-    })
-})
-
-
-</script>
-
+   
 
 
 
@@ -301,14 +256,13 @@ $('#bootstrapForm').submit(function (event) {
   <div class="container">
     <div class="row justify-content-center mb-5">
       <div class="col-12 mb-0 content-head">
-        <h3 class="mbr-section-title mbr-fonts-style align-center display-2">
+        <h3 class="mbr-section-title mbr-fonts-style align-center display-5">
           <strong>Our Uniqueness</strong></h3>
         <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-4 display-7">At Swift-Lane, we pride ourselves on offering a premium travel experience for our esteemed passengers. Our services include:<br><div><br></div><div><br></div></h5>
       </div>
     </div>
     <div class="row">
-      
-      <div class="item features-without-image col-12 col-md-6 col-lg-4 active">
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
         <div class="item-wrapper">
           <div class="card-box align-left">
             <div class="iconfont-wrapper mb-3">
@@ -320,7 +274,8 @@ $('#bootstrapForm').submit(function (event) {
             
           </div>
         </div>
-      </div><div class="item features-without-image col-12 col-md-6 col-lg-4">
+      </div>
+      <div class="item features-without-image col-12 col-md-6 col-lg-4">
         <div class="item-wrapper">
           <div class="card-box align-left">
             <div class="iconfont-wrapper mb-3">
@@ -401,7 +356,7 @@ $('#bootstrapForm').submit(function (event) {
                 <p class="mbr-text mbr-fonts-style mb-4 display-7"></p>
             </div>
             <div class="col-12 col-md-6">
-                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAtXm0x23nRCgazjDV2Kl3GTHRP411ougQ&amp;q=GOMBE" allowfullscreen=""></iframe></div>
+                <div class="google-map"></div>
             </div>
             <div class="col-md-6">
                 <div class="social-list align-left">
@@ -437,5 +392,41 @@ $('#bootstrapForm').submit(function (event) {
 </section><script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/ytplayer/index.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/theme/js/script.js"></script>  
   
   
+<script>
+$('#bootstrapForm').submit(function (event) {
+    event.preventDefault()
+    var extraData = {}
+    {
+        /* Parsing input date id=689828984 */
+        var dateField = $("#689828984_date").val()
+        var timeField = $("#689828984_time").val()
+        let d = new Date(dateField)
+        if (!isNaN(d.getTime())) {
+            extraData["entry.689828984_year"] = d.getFullYear()
+            extraData["entry.689828984_month"] = d.getMonth() + 1
+            extraData["entry.689828984_day"] = d.getUTCDate()
+        }
+        if (timeField && timeField.split(':').length >= 2) {
+            let values = timeField.split(':')
+            extraData["entry.689828984_hour"] = values[0]
+            extraData["entry.689828984_minute"] = values[1]
+        }
+    }
+    $('#bootstrapForm').ajaxSubmit({
+        data: extraData,
+        dataType: 'jsonp',  // This won't really work. It's just to use a GET instead of a POST to allow cookies from different domain.
+        error: function () {
+            // Submit of form should be successful but JSONP callback will fail because Google Forms
+            // does not support it, so this is handled as a failure.
+            alert('Booked Successfully, Please Confirm your Order via Whatsapp, Thanks! .')
+            // You can also redirect the user to a custom thank-you page:
+            window.location = 'http://wa.me/dananini'
+        }
+    })
+})
+
+
+</script>
+
 </body>
 </html>
