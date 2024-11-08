@@ -1394,15 +1394,28 @@ a {
   text-align: center;
 }
 .cid-uroP4LKtYd {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   background-color: #f7f7f7;
 }
-.cid-uroP4LKtYd img {
-  width: auto;
+.cid-uroP4LKtYd .mbr-overlay {
+  background-color: #232323;
+  opacity: 0.6;
 }
-.cid-uroP4LKtYd H2 {
-  color: #ffffff;
+.cid-uroP4LKtYd form .mbr-section-btn {
+  text-align: center;
+  width: 100%;
+}
+.cid-uroP4LKtYd form .mbr-section-btn .btn {
+  display: inline-flex;
+}
+@media (max-width: 991px) {
+  .cid-uroP4LKtYd form .mbr-section-btn .btn {
+    width: 100%;
+  }
+}
+.cid-uroP4LKtYd .content-head {
+  max-width: 800px;
 }
 .cid-uroFO4TuIS {
   padding-top: 6rem;
